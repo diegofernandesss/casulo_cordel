@@ -24,6 +24,7 @@ function abrirModalEquipe() {
     modalEquipe.style.display= 'block'
     modalApostilas.style.display = 'none'
     modalEventos.style.display = 'none'
+    modalIndicacoes.style.display = 'none'
   }
 
   else {
@@ -38,7 +39,7 @@ function abrirModalApostilas(){
   if (atualStyleApostilas != 'none'){
     modalEquipe.style.display = 'none'
     modalEventos.style.display = 'none'
-
+    modalIndicacoes.style.display = 'none'
     modalApostilas.style.display= 'block'
 
   } else {
@@ -53,8 +54,20 @@ function abrirModalEventos(){
   if (atualStyleEventos != 'none'){
     modalEquipe.style.display = 'none'
     modalApostilas.style.display = 'none'
+    modalIndicacoes.style.display = 'none'
     modalEventos.style.display = 'block'
     
+  }
+}
+
+let modalIndicacoes = document.getElementById("modalIndicacoes")
+let atualStyleIndicacoes = modalIndicacoes.style.display
+function abrirModalIndicacoes(){
+  if (atualStyleIndicacoes != 'none'){
+    modalEquipe.style.display = 'none'
+    modalApostilas.style.display = 'none'
+    modalEventos.style.display = 'none'
+    modalIndicacoes.style.display = 'block'
   }
 }
 
@@ -69,6 +82,7 @@ window.onclick = function(event) {
     
   }
 }
+
 
 btnApostilas.addEventListener("click", abrirModalApostilas)
 window.onclick = function(event) {
@@ -88,6 +102,15 @@ window.onclick = function(event) {
     abrirModalEventos()
   }
 }
+
+btnIndicacoes.addEventListener("click", abrirModalIndicacoes)
+window.onclick = function (event){
+  const modalIndicacoes = document.getElementById("modalIndicacoes")
+  if (event.target == modalIndicacoes){
+    abrirModalIndicacoes()
+  }
+}
+
 
 
 
