@@ -4,39 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casulo Cordel</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 </head>
 <body>
+    
+
     <div class="max-width">
         <main>
             <section class="glass">
                 <div class="dashboard">
                     <div class="user">
-                        <img class="perfil"src="imagem/Perfil.svg" alt="perfil">
+                        <img class="Perfil"src="imagem/Perfil.svg" alt="perfil">
                         <h3>CASULO 
                             CORDEL</h3>
-                        <p>O Casulo cordel tem como
+                        <p class="descricao-cordel">
+                            O Casulo cordel tem como
                             finalidade divulgar cordéis autorais sobre a biologia das borboletas.
-                            </p>
+                        </p>
                     </div>
                 </div>
 
+
                 <ul class="links">
-                    <li href=""><a href="">Equipe</a></li>
-                    <li href=""><a href="">Apostilas</a></li>
-                    <li href=""><a href="">Eventos</a></li>
-                    <li href=""><a href="">Indicações</a></li>
+                    <li><a class="list" id="equipe">Equipe</a></li>
+                    <li><a class="list" id="apostilas">Apostilas</a></li>
+                    <li><a class="list" id="eventos">Eventos</a></li>
+                    <li><a class="list" id="indicacoes">Indicações</a></li>
                 </ul>
 
                 <div class ="footer">
                     <a href="https://open.spotify.com/show/4dsAX7ktqdSGwMwBAcM26z?si=2c3073a4ce614be2&nd=1" target="_blank"><i class="fab fa-spotify"></i></a>
                     <a href="https://www.instagram.com/casulocordel/" target="_blank"><i class="fab fa-instagram"></i></a>
                 </div>
+                
             </section>
-        </main>
+            
+            <div id="modalEquipe"class="modalEquipe">
+                <div class="modal-content-equipe" id="modal-content-equipe">
+                     <div class="row" id="row"> 
+                        <div class="integrante">
+                            <img src="imagem/1.svg">
+                            <div class="descricao">
+                                <span>Daniel Lima</span>
+                                <span>Editor</span>       
+                            </div>
+                        </div>
+                        <div class="integrante">
+                            <img src="imagem/2.svg">
+                            <div class="descricao">
+                                <span>Cíntia Moreira</span>
+                                <span>Escritora</span>                             
+                            </div>                          
+                        </div>
+                        <div class="integrante">
+                            <img src="imagem/4.svg">
+                            <div class="descricao">
+                                <span>Diego Fernandes</span>
+                                <span>Programador</span>
+                            </div>
+                        </div>
+                        <div class="integrante">
+                            <img src="imagem/4.svg">
+                            <div class="descricao">
+                                <span>Diego Fernandes</span>
+                                <span>Programador</span>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="integrante">
+                            <img src="imagem/6.svg">
+                            <div class="descricao">
+                                <span>Lucyana Sobral</span>
+                                <span>Orientadora</span>
+                            </div>        
+                        </div>
+                        <div class="integrante">
+                            <img src="imagem/5.svg">
+                            <div class="descricao">
+                                <span>Maria de Fátima</span>
+                                <span>Coorientadora</span>
+                            </div>
+                        </div>
+                        <div class="integrante">
+                            <img src="imagem/3.svg">
+                            <div class="descricao">
+                                <span>Giovana Bione</span>
+                                <span>Designer</span>
+                            </div>
+                        </div> 
+                        
+                    </div> 
+                </div>
+                <div class="modalApostilas" id="modalApostilas">
+                    <div class="modal-content-apostila" id="modal-content-apostila">
+                        <div class="row">
+                            <div class="apostila">
+                                <img src="imagem/image 1.svg">
+                                <div class="descricao-apostila">
+                                    
+                                    <span>Origem da Vida,</span>
+                                    <p>Evolução, diversidade e Ecologia de Borboletas.</p>
+                                    <p>2021</p>
+                                    <ul class="botoes">
+                                        <li><button href="">Baixar</button></li>
+                                        <li><button href="">Visualizar</button></li>
+                                        <li><button href="">Marca Página</button></li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>                 
+                    </div>
+                </div>
+                <div class="modalEventos" id="modalEventos">
+                    <div class="modal-content-eventos" id="modal-content-eventos">
+                        <div class="row">
+                            <div class="imgEvento">
+                                <img src="imagem/foto2.svg">
+                                <div class="descricao-evento">
+                                    <p>Escola João José da Costa (09 de Março Dia Internacional da Mulher).</p>
+                                    <p>2022</p>
+                                    <button href="">Veja mais fotos</button>
+                                </div>
+                            </div>
+                            <div class="imgEvento">
+                                <img src="imagem/foto1.svg">
+                                <div class="descricao-evento">
+                                    <p>Aula inaugural do projeto "Qualifica Mulher" do IFPB - Campus Cabedelo.</p>
+                                    <p>2022</p>
+                                    <button href="">Veja mais fotos</button>
+                                </div>
+                            </div>
+                        </div>
 
-        
+                    </div>
+
+
+                </div>
+            </div>
+            
+
+            
+
+            
+        </main>
     </div>
+    <script src="index.js"></script>
+</body>
 </html>
