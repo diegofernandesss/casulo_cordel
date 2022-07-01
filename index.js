@@ -1,3 +1,4 @@
+
 //Definição das variáveis
 let btnEquipe = document.getElementById("equipe");
 let btnApostilas = document.getElementById("apostilas");
@@ -109,6 +110,8 @@ window.onclick = function (event){
     abrirModalIndicacoes()
   }
 }
+
+
 
 
 
