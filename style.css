@@ -11,12 +11,14 @@
 :root{
     --background-color: #F9C801;
     --text-color: #000000;
+    --btn-color: #fff;
+
 }
 main {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding: 4rem;
+    padding-left: 4rem;
     
     
 }
@@ -37,6 +39,7 @@ body{
     border-radius: 2rem;
     z-index: 1;
     backdrop-filter: blur(2px); 
+
 }
 
 .Perfil{
@@ -73,7 +76,7 @@ button {
 }
 
 button:hover {
-    background-color: #fff;
+    background-color: var(--btn-color);
 }
 
 
@@ -101,12 +104,12 @@ li {
 }
 
 .active {
-    border: 2px solid black;
+    border: 2px solid  var(--text-color);
     padding: 10px;
 }
 
 .list:hover {
-    border: 2px solid black;
+    border: 2px solid  var(--text-color);
     padding: 10px;
 
 }
@@ -114,7 +117,7 @@ li {
 
 .descricao {
     background-color: var(--text-color);
-    color: #fff;
+    color: var(--btn-color);
     width: 160px;
     padding: 10px;
     text-align: center;
@@ -122,7 +125,7 @@ li {
 
 .descricao-evento {
     background-color: var(--text-color);
-    color: #fff;
+    color: var(--btn-color);
     width: 180px;
     font-size: 14px;
     padding: 10px;
@@ -138,7 +141,6 @@ li {
     align-items: center;
     text-align: center;
     padding: 10px;
-
     
 }
 
@@ -160,7 +162,7 @@ li {
     border-radius: 1rem;
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid rgb(241, 234, 234);
-    overflow: hidden;
+    
 
 }
 
@@ -187,6 +189,7 @@ a {
 
 .integrante{
     padding: 15px;
+    
 }
 
 
@@ -203,6 +206,7 @@ a {
     background-color: rgba(255, 255, 255, 0.8);
     border: 2px solid rgb(241, 234, 234);
     overflow: hidden; 
+    padding: 20px;
 
     
 }
@@ -222,8 +226,8 @@ a {
 }
 
 .descricao-apostila{
-    background-color: #000000;
-    color: #fff;
+    background-color:  var(--text-color);
+    color: var(--btn-color);
     text-align: center;
     width: 200px;
     padding: 10px;
@@ -231,8 +235,8 @@ a {
 }
 
 .descricao-indicacao{
-    background-color: #000000;
-    color: #fff;
+    background-color:  var(--text-color);
+    color: var(--btn-color);
     text-align: center;
     width: 179.5px;
     padding: 10px;
@@ -252,6 +256,10 @@ a {
     color:  var(--text-color);
     font-size: 40px;
     
+}
+
+.footer a:hover {
+    color: var(--btn-color);
 }
 
 
