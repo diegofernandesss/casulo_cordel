@@ -14,11 +14,15 @@
     --btn-color: #fff;
 
 }
+
+
 main {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding-left: 4rem;
+    margin:auto;
+    
     
     
 }
@@ -39,6 +43,7 @@ body{
     border-radius: 2rem;
     z-index: 1;
     backdrop-filter: blur(2px); 
+
 
 }
 
@@ -166,6 +171,7 @@ li {
 
 }
 
+
 .modalIndicacoes {
     display: none; 
     position: relative;
@@ -264,3 +270,6 @@ a {
 
 
 
+    
+    
+    
