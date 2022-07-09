@@ -2,6 +2,26 @@ import listaEquipe from "./listaEquipe.js";
 import listaEventos from "./listaEventos.js";
 import listaIndicacoes from "./listaIndicacoes.js";
 import listaApostila from "./listaApostila.js";
+
+
+let loading = `
+<div class="main" id="load">
+    <div class="loading">
+        <img src="imagem/Perfil.svg" alt="Logo" class="logo">
+        <h4>CASULO CORDEL</h4>
+        <div class="animation-bar"></div>
+    </div>
+</div>
+`
+let destino = $("#destinoAviso");
+
+destino.append(loading);
+setTimeout(function(){
+  $("header").remove()
+}, 2000)
+
+
+
 for (let equipe of listaEquipe){
   const cardEquipe = `
                     <div class="integrante">
@@ -12,7 +32,6 @@ for (let equipe of listaEquipe){
                       </div>
                     </div>
                       `
-
   let rowEquipe = document.getElementById("rowEquipe");
   rowEquipe.insertAdjacentHTML("beforeend", cardEquipe)
 }
@@ -66,26 +85,6 @@ for (let apostila of listaApostila){
   let rowApostila = document.getElementById("rowApostila");
   rowApostila.insertAdjacentHTML("beforeend", cardApostila);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //Definição das variáveis
