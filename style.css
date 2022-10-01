@@ -367,7 +367,7 @@ a {
     }
     
      .modalEquipe, .modalApostilas, .modalEventos, .modalIndicacoes {
-        margin: 0.5rem;
+        margin: 0.7rem;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -605,8 +605,8 @@ a {
     }
 
     .integrante img {
-        height: 90px;
-        width: 100px;
+        height: 110px;
+        width: 120px;
     }
 
    
