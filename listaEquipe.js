@@ -44,4 +44,5 @@ const listaEquipe = [
 
 ]
 
+
 export default listaEquipe;
