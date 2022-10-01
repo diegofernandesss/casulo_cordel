@@ -342,15 +342,13 @@ a {
         left: 1%;
         top: 1rem;
         width: 40rem;
-        padding-bottom: 55rem;
-        background-image: url("imagem/Capa.png");
+        padding-bottom: 53rem;
+        background-image: url("imagem/capinha1.png");
         background-size: cover;
         background-position: 0%;
-        margin-right: -3rem;
+        margin-right: -2.6rem;
         margin-left: -3rem; 
         border-radius: 2rem;
-
-
     }
 
     #rowEquipe{
