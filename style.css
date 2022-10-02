@@ -264,9 +264,21 @@ a {
     width: 179.5px;
     padding: 10px;
     font-size: 13px;
-  
-
 }
+
+.descricao-indicacao button{
+    margin-top: 16px;
+}
+
+.descricao-evento button{
+    margin-top: 16px;
+}
+
+.descricao-apostila ul{
+    margin-top: 16px;
+}
+
+
 .footer {
     padding-top: 3rem;
     justify-content: space-between;
